@@ -1,0 +1,13 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Swap files
+*.swp
+*.swo
+*.save
+
+# Python
+__pycache__/
+*.pyc
