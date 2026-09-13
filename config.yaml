@@ -1,0 +1,28 @@
+# Prompt-to-Prompt Configuration
+model:
+  model_id: "runwayml/stable-diffusion-v1-5"
+  device: "auto"  # 'auto', 'cuda', 'mps', or 'cpu'
+  dtype: "float32" # 'float32', 'float16', 'bfloat16'
+  low_memory_mode: false
+  enable_attention_slicing: true
+  enable_vae_slicing: true
+
+diffusion:
+  image_size: 512
+  num_inference_steps: 50
+  guidance_scale: 7.5
+  default_seed: 42
+
+editing:
+  cross_replace_steps: 0.8
+  self_replace_steps: 0.4
+  smooth_weights: true
+
+paths:
+  output_dir: "outputs"
+  assets_dir: "assets"
+
+author:
+  name: "Anuj Yadav"
+  affiliation: "Indian Institute of Technology Kharagpur (IIT KGP)"
+  project: "Prompt-to-Prompt Text-Guided Image Editing"
